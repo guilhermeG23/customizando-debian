@@ -1,26 +1,21 @@
--> Instalado o VIM
+#Programas instalados 
+-> VIM
+-> SSH
 
-1º Etapa
-#Debian - 10.0.0 - NetInstall -> Instalação limpa
--> Instalado sem nenhum extra, somente com o grub
+#Utilizando
+-> Debian 10.0.0 - netInstall
 
-2º Etapa
-#Modificar o GRUB para bootar em menor tempo
--> /etc/default/grub
+#Alterado durante a instalação
+-> GRUB
 
--> Tempo diminuido para 0 para boot instantaneo
+#Instalar tema do Mint
+apt install mint-meta-xfce
 
--> Atualizar grub: update-grub
+#Necessidades
+-> VNC
+-> Navegador
+-> Sessao SSH para o Cobol
 
-3º Etapa
-#ssh 
-apt install ssh -y
-vim /etc/ssh/sshd_config
-
-Port 22
-PermitRootLogin yes
-
-/etc/init.d/ssh restart
-
-4ºEtapa
-
+#Pacotes temporarios
+-> Git
+-> Vim
