@@ -1,0 +1,25 @@
+-> Instalado o VIM
+
+1º Etapa
+#Debian - 10.0.0 - NetInstall -> Instalação limpa
+-> Instalado sem nenhum extra, somente com o grub
+
+2º Etapa
+#Modificar o GRUB para bootar em menor tempo
+-> /etc/default/grub
+
+-> Tempo diminuido para 0 para boot instantaneo
+
+-> Atualizar grub: update-grub
+
+3º Etapa
+#ssh 
+apt install ssh -y
+vim /etc/ssh/sshd_config
+
+Port 22
+PermitRootLogin yes
+
+/etc/init.d/ssh restart
+
+4ºEtapa
